@@ -33,15 +33,13 @@
 </head>
 <body>
 	<div id="chart"></div>
-    <p id="val" style="overflow-y:auto;">
+    <span id="val" style="overflow-y:auto;"></span>
 	<div id="chart2"></div>
 	
 	<script>		
 
-		var data=0;
-		function drawChart(val){
-			data=val;
-		}
+		var data=val;
+
 	// data에 값을 꾸준히 넣어서 그래프에 표시되도록 해야한다.
 	
 		Plotly.plot('chart',[{
